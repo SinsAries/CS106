@@ -1,3 +1,7 @@
+def cost(actions):
+    """A cost function"""
+    return len([x for x in actions if x.islower()])
+
 def uniformCostSearch(gameState):
     """Implement uniformCostSearch approach"""
     beginBox = PosOfBoxes(gameState)
